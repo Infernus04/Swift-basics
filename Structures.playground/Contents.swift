@@ -26,3 +26,20 @@ print(myAccount.balance)
 print(myAccount.bankAccountNumber)
 
 
+struct Temperature {
+    var celcius : Double
+     
+    init (celcius : Double) {
+        self.celcius = celcius
+    }
+    
+    init(fahrenheit : Double){
+        celcius = (fahrenheit - 32) / 1.8
+    }
+}
+
+let currentTemperature = Temperature(celcius: 18.5)
+let boiling = Temperature(fahrenheit: 212)
+
+print(currentTemperature.celcius)
+print(boiling.celcius)
