@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         secondLabel.text = "00"
     }
     @objc func updateTimer(){
-        totalSecond += 1
+        totalSecond += 2
         updateLabels()
     }
     
